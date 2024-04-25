@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+
+   function digitalClock() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+       //* добавление ведущих нулей */
+      if (hours < 10) hours = "0" + hours;
+      if (minutes < 10) minutes = "0" + minutes;
+      if (seconds < 10) seconds = "0" + seconds;
+        document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+        setTimeout("digitalClock()", 1000);
+   }
+
+
+    </script>
+    <meta charset="utf-8">
+    <title>Метрополитен и все о нём</title>
+    <style type="text/css">
+
+   .block1 {
+    width: 200px;
+    background: #423c63;
+    color: #ffffff;
+    padding:7px;
+    padding-right: 20px;
+    border: solid 1px black;
+    float: left;
+    border-radius: 10px;
+   }
+    IMG.fig {
+    float: right; /* Обтекание картинки по левому краю */
+    padding-left: 10px; /* Отступ слева */
+    padding-bottom: 10px; /* Отступ снизу */
+   }
+    IMG.fig2 {
+    float: left; /* Обтекание картинки по левому краю */
+    padding-left: 10px; /* Отступ слева */
+    padding-bottom: 10px; /* Отступ снизу */
+   }
+   .block2 {
+    width: 200px;
+    background: #543964;
+    color: #ffffff;
+    padding: 7px;
+    border: solid 1px black;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    border-radius: 10px;
+
+   }
+   .block3 {
+    width: 200px;
+    background: #6c4675;
+    color: #ffffff;
+    padding: 7px;
+    border: solid 1px black;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 20px;
+    border-radius: 10px;
+
+   }
+   .block4 {
+    width: 200px;
+    background: #735184;
+    color: #ffffff;
+    padding: 7px;
+    border: solid 1px black;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 30px;
+    border-radius: 10px;
+   }
+   .block5 {
+    width: 200px;
+    background: #53377a;
+    color: #ffffff;
+    padding: 7px;
+    border: solid 1px black;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 40px;
+    border-radius: 10px;
+    animation: change-background 4s linear infinite;
+   }
+@keyframes change-background {
+  0% {
+    background: #FFC0CB;
+  }
+  25% {
+    background: #FFB6C1;
+  }
+  50% {
+    background: #FF1493;
+  }
+  75% {
+    background: #C71585;
+  }
+  93% {
+    background: #DB7093;
+  }
+  100% {
+    background: #DB7093;
+  }
+}
+   .block6 {
+    width: 80px;
+    background: #53377a;
+    color: #ffffff;
+    padding: 7px;
+    border: solid 1px black;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 50px;
+    border-radius: 10px;
+   }
+
+   .noobject {
+    width: 400px;
+    padding: 70px;
+    }
+    p.dline {
+    line-height: 2.5;
+   }
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 35px;
+}
+   .noobject1 {
+    width: 400px;
+    padding: 140px;
+    }
+    .noobject2 {
+    width: 400px;
+    padding: 30px;
+    }
+   BODY {
+  height: 1350px;
+  width: 300;
+  background: linear-gradient(45deg, rgba(34, 200, 163, .1), rgba(103, 30, 31, .5)), url(https://img.alicdn.com/imgextra/i4/6000000001904/O1CN01QzFum91Pw4ciUsIeq_!!6000000001904-0-tbvideo.jpg);
+  background-size: cover;
+}
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="block1">
+    <a href="history.html"><p><font size="3" color="white" face="Century gothic">История</p></a>
+</div>
+<div class="block2">
+    <a href="trains.html"><p><font size="3" color="white" face="Century gothic">Вагоны и составы</p></a>
+</div>
+<div class="block3">
+    <a href="stations.html"><p><font size="3" color="white" face="Century gothic">Станции</p></a>
+</div>
+<div class="block4">
+    <a href="facts.html"><p><font size="3" color="white" face="Century gothic">Интересные факты</p></a>
+</div>
+<div class="block5">
+    <a href="about.html"><p><font size="3" color="white" face="Century gothic">о сайте</p></a>
+</div>
+<div class="block6">
+    <a href="otz.html"><p><font size="3" color="white" face="Century gothic">ваши отзывы</p></a>
+</div>
+<div class="noobject2">
+</div>
+<body>
+<div class="waviy">
+<h1 align="center"><font size="55" color="black" face="Century gothic">метрополитен</h1>
+</div>
+<p><img src="https://c.pxhere.com/photos/68/0b/metro_tunnel_railway_construction_rails_sleepers-669564.jpg!d"
+        width="350" height="460"
+        alt="Иллюстрация" class="fig"><font size="5">
+    <b>Метрополитен, метро</b>— городская внеуличная железная дорога,
+    имеющая собственный габарит, инженерно отделённая от любого другого
+    транспорта и пешеходного движения и предназначенная для пассажирского движения.
+    Может быть подземным (в тоннелях), наземным (на поверхности земли)
+    и надземным (на эстакадах).
+</p>
+
+<div class="noobject">
+</div>
+
+<p class="dline"><img src="https://topkin.ru/wp-content/uploads/2016/09/metro-v-Pitere.jpg" width="650" height="400"
+                      alt="Иллюстрация1" class="fig2"><font size="5">
+    В общем случае, <b>метрополитен</b> — это любая
+    внеуличная городская пассажирская транспортная система с курсирующими
+    по ней маршрутными поездами</p>
+
+<div class="noobject1">
+</div>
+
+
+<div id="id_clock"></div>
+<script>digitalClock();</script>
+
+
+<address>
+    Email: <a href="mailto:Arina2030620@yandex.ru">моя почта</a>
+    VK: <a href="https://vk.com/arina___grigoryeva">вк</a>
+</address>
+
+<p><font size="3" color="grey" face="footlight mt light">Автор сайта не несет ответсвенность за информацию размещенную
+    на данном сайте, и ни в коем случае не присваивает себе её принадлежание. Сайт создан в учебных целях.</p>
+
+</body>
+</html>

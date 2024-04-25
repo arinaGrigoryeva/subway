@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Отзывы и предложения</title>
+    <style type="text/css">
+    form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 100px;
+    animation: change-background 4s linear infinite;
+
+}
+
+
+@keyframes change-background {
+  0% {
+    background: #DCDCDC;
+  }
+  25% {
+    background: #C0C0C0;
+  }
+  50% {
+    background: #808080;
+  }
+  75% {
+    background: #BC8F8F;
+  }
+  93% {
+    background: #808080;
+  }
+  100% {
+    background: #C0C0C0;
+  }
+}
+   .back {
+    width: 70;
+    background: #423c63;
+    color: #ffffff;
+    padding:-5px;
+    padding-right: 15px;
+    border: solid 1px black;
+    float: left;
+    top:9;
+    left:0;
+    border-radius: 10px;
+    }
+    .form-control {
+    width: 30;
+    background: #ffffff;
+    color: #000000;
+    padding:10px;
+    padding-right: 15px;
+    border: solid 1px black;
+    float: left;
+    top:9;
+    left:0;
+    border-radius: 10px;
+    }
+
+    </style>
+</head>
+<body>
+<div class="back">
+    <a href="index_new.html" style="text-decoration: none; "><p><font size="3" color="white" face="footlight mt light">&nbsp&nbsp<< &nbsp назад</p></a>
+</div>
+<h1 align="center"><font size="5" color="black" face="footlight mt light">Здесь Вы можете оставить свой отзыв</h1>
+<div>
+    <form class="login_form" method="post">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+               placeholder="Введите адрес почты" name="email">
+        <div class="form-group">
+            <label for="about"><font size="3" color="grey" face="footlight mt light">отзыв</label>
+            <textarea class="form-control" id="about" rows="5" name="about"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">отправить</button>
+    </form>
+</div>
+
+</body>
+</html>
